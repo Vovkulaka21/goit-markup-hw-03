@@ -23,18 +23,6 @@ body {
   letter-spacing: var(--stnd-letter-spacing);
   color: var(--text-color);
 }
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
 h1,
 h2,
 h3,
@@ -55,6 +43,23 @@ ol {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 /*header and footer*/
 .logotype {
