@@ -98,6 +98,7 @@ ul {
 .contact-navigation {
   font-style: normal;
   line-height: 1.71;
+  letter-spacing: var(--stnd-letter-spacing);
   color: var(--transparency-color);
 }
 .contact-navigation:hover,
