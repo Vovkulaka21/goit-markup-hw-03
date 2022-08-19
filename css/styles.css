@@ -16,7 +16,7 @@
   --transparency-color: rgba(255, 255, 255, 0.6);
   --alternative-bakcground-color: #f5f4fa;
 }
-/*body and general rules*/
+/*BODY AND GENERAL RULES*/
 body {
   font-family: var(--primary-font);
   font-size: var(--stnd-font-size);
@@ -26,13 +26,14 @@ body {
 h1,
 h2,
 h3,
-h4,
 p {
   margin-top: 0;
   margin-bottom: 0;
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 a {
   text-decoration: none;
@@ -57,14 +58,19 @@ ol {
   margin: -1px;
 }
 .container {
-  width: 1200px;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
-/*header and footer*/
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+/* HEADER */
 .logotype {
+  margin-right: 93px;
   font-family: var(--secondary-font);
   font-style: normal;
   font-weight: var(--font-weight-bold);
@@ -86,17 +92,18 @@ ol {
 .current {
   color: var(--accent-color);
 }
-.header-navigation-contact {
+.header-contact {
   font-style: normal;
   font-weight: var(--font-weight-stnd);
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
-.header-navigation-contact:hover,
-.header-navigation-contact:focus {
+.header-contact:hover,
+.header-contact:focus {
   color: var(--accent-color);
 }
+/* FOOTER */
 .page-footer {
   background-color: var(--secondary-color);
 }
@@ -117,21 +124,28 @@ ol {
   line-height: 1.71;
   color: var(--main-color);
 }
-.contact-navigation {
+.footer-contact {
   font-style: normal;
   line-height: 1.71;
   letter-spacing: var(--stnd-letter-spacing);
   color: var(--transparency-color);
 }
-.contact-navigation:hover,
-.contact-navigation:focus {
+.footer-contact:hover,
+.footer-contact:focus {
   color: var(--accent-color);
 }
-/*main page*/
+/*MAIN PAGE*/
 .order-service {
   background-color: var(--secondary-color);
 }
+.order-service > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .main-title {
+  margin-bottom: 30px;
   font-weight: var(--font-weight-maxbold);
   font-size: 44px;
   line-height: 1.36;
@@ -141,19 +155,24 @@ ol {
   color: var(--main-color);
 }
 .order-btn {
+  padding: 10px 32px;
+  border-radius: 4px;
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-big);
   line-height: 1.9;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   color: var(--main-color);
   cursor: pointer;
   border: none;
 }
+/* OUR FEATURES SECTION */
+.our-features-list {
+  display: flex;
+  gap: 30px;
+}
 .second-title-main {
+  margin-bottom: 50px;
   font-weight: var(--font-weight-bold);
   font-size: 36px;
   line-height: 1.67;
@@ -161,6 +180,7 @@ ol {
   color: var(--second-text-color);
 }
 .third-title-features {
+  margin-bottom: 10px;
   font-weight: var(--font-weight-bold);
   font-size: var(--stnd-font-size);
   line-height: 1.42;
@@ -170,20 +190,38 @@ ol {
 .text-our-features {
   line-height: 1.71;
 }
-.our-team-section {
+/* WHAT WE DO SECTIO */
+.what-we-do-list {
+  display: flex;
+  gap: 30px;
+}
+/* OUR TEAM SECTION */
+.our-team {
   background-color: var(--alternative-bakcground-color);
 }
 .second-title-team {
+  margin-bottom: 50px;
   font-weight: var(--font-weight-bold);
   font-size: 36px;
   line-height: 1.67;
   text-align: center;
   color: var(--second-text-color);
 }
+.our-team-list {
+  display: flex;
+  gap: 30px;
+}
 .team-card {
+  width: 270px;
+  height: 368px;
   background-color: var(--main-color);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-card-text {
+  padding-top: 30px;
 }
 .third-title-team {
+  margin-bottom: 10px;
   font-weight: var(--font-weight-stnd);
   font-size: var(--font-size-big);
   line-height: 1.19;
@@ -195,7 +233,13 @@ ol {
   line-height: 1.19;
   text-align: center;
 }
-/* portfolio page */
+/* PORTFOLIO PAGE */
+.portfolio-nav-list {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
 .portfolio-button {
   font-family: var(--primary-font);
   font-style: normal;
@@ -204,6 +248,7 @@ ol {
   line-height: 26px;
   text-align: center;
   border: none;
+  border-radius: 4px;
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
@@ -211,11 +256,23 @@ ol {
   color: var(--main-color);
   cursor: pointer;
 }
+.portfolio-card-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 .portfolio-card {
+  width: 370px;
+  height: 404px;
   background-color: var(--main-color);
   border: 1px solid #eeeeee;
 }
+.portfolio-card-position {
+  padding: 20px 24px;
+}
 .portfolio-title {
+  margin-bottom: 4px;
   font-weight: var(--font-weight-bold);
   font-size: 18px;
   line-height: 2;
