@@ -206,7 +206,11 @@ ol {
 /* OUR FEATURES SECTION */
 .our-features-list {
   display: flex;
+  justify-content: space-between;
   gap: 30px;
+}
+.our-features-item {
+  flex-basis: calc((100% - 90px) / 4);
 }
 .second-title-main {
   margin-bottom: 50px;
@@ -299,7 +303,6 @@ ol {
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 30px;
-  flex-basis: calc((100%-90px) / 3);
 }
 .portfolio-card {
   width: 370px;
