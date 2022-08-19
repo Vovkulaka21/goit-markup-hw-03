@@ -18,6 +18,7 @@
 }
 /*BODY AND GENERAL RULES*/
 body {
+  width: 1600px;
   font-family: var(--primary-font);
   font-size: var(--stnd-font-size);
   letter-spacing: var(--stnd-letter-spacing);
@@ -67,10 +68,30 @@ ol {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  margin-right: auto;
+  margin-left: auto;
 }
 /* HEADER */
+.header-info {
+  border: 1px solid #ececec;
+}
+.header-info > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.header-list {
+  display: flex;
+  gap: 50px;
+}
 .logotype {
   margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
   font-family: var(--secondary-font);
   font-style: normal;
   font-weight: var(--font-weight-bold);
@@ -107,6 +128,10 @@ ol {
 .page-footer {
   background-color: var(--secondary-color);
 }
+.page-footer > .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .studio-logo-footer {
   font-family: var(--secondary-font);
   font-style: normal;
@@ -117,6 +142,12 @@ ol {
 }
 .one-word-color {
   color: var(--accent-color);
+}
+.footer-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
 }
 .studio-address,
 .address-link {
@@ -144,7 +175,13 @@ ol {
   align-items: center;
   justify-content: center;
 }
+.order-service-text {
+  padding: 200px 452px;
+  margin: auto;
+}
 .main-title {
+  width: 696px;
+  height: 120px;
   margin-bottom: 30px;
   font-weight: var(--font-weight-maxbold);
   font-size: 44px;
@@ -190,7 +227,7 @@ ol {
 .text-our-features {
   line-height: 1.71;
 }
-/* WHAT WE DO SECTIO */
+/* WHAT WE DO SECTION */
 .what-we-do-list {
   display: flex;
   gap: 30px;
@@ -241,6 +278,7 @@ ol {
   gap: 8px;
 }
 .portfolio-button {
+  padding: 6px 22px;
   font-family: var(--primary-font);
   font-style: normal;
   font-weight: var(--font-weight-stnd);
@@ -261,6 +299,7 @@ ol {
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 30px;
+  flex-basis: calc((100%-90px) / 3);
 }
 .portfolio-card {
   width: 370px;
