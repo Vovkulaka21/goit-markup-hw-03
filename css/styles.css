@@ -223,10 +223,6 @@ ol {
   line-height: 1.71;
 }
 /* WHAT WE DO SECTION */
-.what-we-do {
-  padding-top: 0;
-  padding-bottom: 94px;
-}
 .what-we-do-list {
   display: flex;
   gap: 30px;
@@ -234,7 +230,6 @@ ol {
 /* OUR TEAM SECTION */
 .our-team {
   background-color: var(--alternative-bakcground-color);
-  padding-bottom: 94px;
 }
 .second-title-team {
   margin-bottom: 50px;
