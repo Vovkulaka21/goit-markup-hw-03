@@ -18,7 +18,6 @@
 }
 /*BODY AND GENERAL RULES*/
 body {
-  width: 1600px;
   font-family: var(--primary-font);
   font-size: var(--stnd-font-size);
   letter-spacing: var(--stnd-letter-spacing);
@@ -73,11 +72,10 @@ ol {
 }
 /* HEADER */
 .header-info {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .header-info > .container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .navigation {
@@ -85,6 +83,7 @@ ol {
   align-items: center;
 }
 .header-list {
+  margin-left: auto;
   display: flex;
   gap: 50px;
 }
@@ -127,8 +126,6 @@ ol {
 /* FOOTER */
 .page-footer {
   background-color: var(--secondary-color);
-}
-.page-footer > .container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -169,20 +166,16 @@ ol {
 .order-service {
   background-color: var(--secondary-color);
 }
-.order-service > .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.order-service-text {
-  padding: 200px 452px;
-  margin: auto;
+.order-service {
+  padding: 200px 0;
+  text-align: center;
 }
 .main-title {
   width: 696px;
-  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
+  text-align: center;
   font-weight: var(--font-weight-maxbold);
   font-size: 44px;
   line-height: 1.36;
@@ -232,6 +225,10 @@ ol {
   line-height: 1.71;
 }
 /* WHAT WE DO SECTION */
+.what-we-do {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
 .what-we-do-list {
   display: flex;
   gap: 30px;
@@ -239,6 +236,7 @@ ol {
 /* OUR TEAM SECTION */
 .our-team {
   background-color: var(--alternative-bakcground-color);
+  padding-bottom: 94px;
 }
 .second-title-team {
   margin-bottom: 50px;
@@ -254,12 +252,12 @@ ol {
 }
 .team-card {
   width: 270px;
-  height: 368px;
   background-color: var(--main-color);
   border-radius: 0px 0px 4px 4px;
 }
 .team-card-text {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 .third-title-team {
   margin-bottom: 10px;
