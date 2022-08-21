@@ -298,7 +298,6 @@ ol {
 }
 .portfolio-card {
   width: 370px;
-  height: 404px;
   background-color: var(--main-color);
   border: 1px solid #eeeeee;
 }
