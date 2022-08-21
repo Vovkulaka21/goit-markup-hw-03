@@ -128,6 +128,8 @@ ol {
   padding-bottom: 60px;
 }
 .studio-logo-footer {
+  display: inline-block;
+  margin-bottom: 20px;
   font-family: var(--secondary-font);
   font-style: normal;
   font-weight: var(--font-weight-bold);
@@ -139,7 +141,6 @@ ol {
   color: var(--accent-color);
 }
 .footer-list {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 9px;
